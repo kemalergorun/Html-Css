@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+    <h1>Form Validation</h1>
+     <form method="get">
+      <label for="username">Username</label>
+
+      <!-- required attribute does not allow us to leave the input empty. -->
+      <input
+        type="text"
+        id="username"
+        name="username"
+        placeholder="user123"
+        required
+        maxlength="10"
+      />
+
+      <br />
+
+      <!-- minlength attribute does not allow us to write specified character in it.  -->
+      <!-- maxlength attribute does not allow us to write more than specified character in it. -->
+      <label for="password">Password</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="***********"
+        minlength="8"
+        maxlength="15"
+      />
+
+      <br />
+
+      <!-- min attribute does not allow us to write lesser number. It can be used for numbers -->
+       <!-- max attribute does not allow us to write greater number. It can be used for numbers -->
+
+      <label for="age">Age</label>
+      <input 
+        type="number" 
+        name="age" 
+        id="age" 
+        placeholder="18" 
+        min="18" 
+        max="120" 
+        />
+
+      <br />
+      <br />
+      <input type="submit" />
+    </form>
+  </body>
+</html>

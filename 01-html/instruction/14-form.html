@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Form</h1>
+<!-- If a button inside a form is without type attribute is going to trigger the submitting of the form -->
+    <!-- input types button, submit, reset are working like buttons -->
+    <!-- input type button will not have a default text, you have to give it another attribute called value and whatever you write inside the value attribute will be the text of this button -->
+
+    <form>
+      <!-- label is to direct user what to write inside of input. -->
+      <label for="username">Username</label>
+      <!-- Input is the place where user enter their input to be taken. -->
+      <input id="username" type="text" placeholder="Enter your username" />
+      <!-- input type button | submit | reset, has a feature that will allow you to change the text inside the button using value attribute. -->
+      <input type="submit" value="Submit your username" />
+      <!-- <button type="submit">Submit</button> -->
+      <input type="reset" />
+</form>
+<hr>
+<!-- login -->
+ <form action="" method="get">
+
+        <label for="username1">Username</label>
+        <input type="text" id="username1" name="username" placeholder="Enter your username">
+
+        <br>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password">
+
+        <br>
+        <input type="submit" value="Submit">
+
+    </form>
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
