@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>homework2</title>
 </head>
-<h1>Form Validation</h1>
+<h1>Form & Validation</h1>
 <body>
     <table>
         <tbody>
@@ -16,7 +16,7 @@
         <input type="text" id="firstname" name="firstname" placeholder="Enter your firstname">
         </form>
 </td>
-<td rowspan="3">
+<td rowspan="3"style="text-align:center;">
 <form>
     <br>
 <label>Hobbies</label>
@@ -27,23 +27,130 @@
       <input
         type="checkbox"
         name="hobbies"
-        id="playingGuitar"
-        value="Playing Guitar"
+        id="Football"
+        value="Football"
       />
-      <label for="playingGuitar">Playing Guitar</label>
+      <label for="Football">Football</label>
       <br />
-      <input type="checkbox" name="hobbies" id="swimming" value="Swimming" />
-      <label for="swimming">Swimming</label>
+      <input type="checkbox" name="hobbies" id="Volleyball" value="Volleyball" />
+      <label for="Volleyball">Volleyball</label>
       <br />
-      <input type="checkbox" name="hobbies" id="football" value="Football" />
-      <label for="football">Football</label>
+      <input type="checkbox" name="hobbies" id="Basketball" value="Basketball" />
+      <label for="Basketball">Basketball</label>
       </form>
-
-
-
-
 </td>
             </tr>
+            <tr>
+                <td>
+                    <form action="" method="get">
+      <!-- TEXT -->
+      <label for="Last Name">Last Name</label>
+      <input
+        type="text"
+        name="Last Name"
+        id="Last Name"
+        placeholder="Enter your lastname">
+        </form>
+</td>
+           </tr>
+           <tr>
+            <td>
+                <form action="">
+                    <label for="gender">Gender</label>
+
+
+<input type="radio" name="gender" id="female" value="female" />
+      <label for="female">Female</label>
+
+      <input type="radio" name="gender" id="male" value="male" />
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="dont want" value="dont want" />
+      <label for="female">Dont want</label>
+ </form>
+
+            </td>
+           </tr>
+           <tr>
+            <td>
+<form action="">
+<label for="city">City</label>
+<select name="cities" id="cities">
+            <option value="">Select a city</option>
+            <option value="Ank">Ankara</option>
+            <option value="İst">İstanbul</option>
+            <option value="İzm">İzmir</option>
+        </select>
+</form></td>
+ </tr>
+ <tr>
+    <td>
+        <form action="">
+            <label for="email">E-mail</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your e-mail"
+      />
+        </form>
+
+    </td>
+    <td>
+        <form action="">
+<label for="image">Profile Picture</label>
+      <input type="file" name="image" id="image" />
+
+        </form>
+    </td>
+ </tr>
+ <tr>
+    <td>
+        <form>
+           <label for="url">Personal Website</label>
+      <input
+        type="url"
+        id="url"
+        name="url"
+        placeholder="Enter your url" /> 
+ </form> </td>
+ <td>
+    <form action="">
+        <label for="birthDate"> Birth Date</label>
+      <input type="date" name="birthDate" id="birthDate" /> </form>
+ </td>
+ </tr>
+ <tr>
+    <td>
+        <form action="">
+            <label for="tel">Phone Number</label>
+       <input type="tel" name="tel" id="tel" placeholder="(123) 456-7890">
+  </form>
+    </td>
+    <td rowspan="3">
+        <form action="">
+        <label for="Address">Address</label>
+        <textarea
+        name="feedback"
+        id="feedback"
+        cols="20"
+        rows="3"
+        style="resize: vertical;"
+      ></textarea>
+
+
+
+
+
+</form>
+    </td>
+    <tr>
+        <td style="text-align: center;">
+<input type="submit"value="Register"/>
+
+        </td>
+    </tr>
+ </tr>
+
 
 
 
