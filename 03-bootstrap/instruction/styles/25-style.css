@@ -1,0 +1,15 @@
+.card-text{
+    text-align: justify;
+}
+
+.card .card-footer > i:not(i:last-child){
+    border-right: 1px solid white;
+    padding-right: 30px;
+}
+
+
+@media (min-width: 768px){
+    div[class^="col-"]:nth-child(2) .card{
+        transform: scale(1.1);
+    }
+}

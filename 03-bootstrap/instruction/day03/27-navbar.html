@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+     <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+</head>
+<body data-bs-theme="dark">
+    <h1 class="text-center text-danger my-2 ">Navbar</h1>
+    
+    <!-- 1- Create nav -->
+     <nav class="navbar navbar-expand-lg bg-secondary">
+
+        <!-- 2- Create div container-fluid -->
+         <div class="container-fluid">
+
+            <!-- 3- Create the logo or brand -->
+            <a href="#" class="navbar-brand">^o_o^</a>
+
+            <!-- 4- Small screen design -->
+             <button 
+                class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" data-bs-target="#mainMenu">
+                <span class="navbar-toggler-icon"></span>
+             </button>
+
+
+             <!-- 5- Large Screen - Collapsing -->
+              <div class="navbar-collapse collapse" id="mainMenu">
+                <ul class="navbar-nav mx-auto">
+                    <li><a class="nav-link" href="#">Lorem.</a></li>
+                    <li><a class="nav-link" href="#">Eveniet!</a></li>
+                    <li><a class="nav-link" href="#">Dolores!</a></li>
+                </ul>
+
+                <!-- Search Input -->
+                 <form class="d-flex gap-1">
+                    <input type="text" placeholder="Search..." class="form-control">
+                    <button class="btn btn-outline-primary">Search</button>
+                 </form>
+              </div>
+         </div>
+
+     </nav>
+
+
+
+
+    <!-- ACTIONS WORK WITH 
+         JAVASCRIPT => data-bs-toggle="dropdown" -->
+     <!-- Bootstrap CDN JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>
