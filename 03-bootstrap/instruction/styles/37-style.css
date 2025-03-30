@@ -1,0 +1,65 @@
+body {
+  background-color: rgb(144, 181, 227);
+}
+
+div.card{
+    width: 36rem;
+    margin: 50px auto;
+}
+
+.card .avatar {
+  background-color: rgb(144, 181, 227);
+  color: #fff;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+
+div.card{
+    border-radius: 25px;
+}
+
+div.card form{
+    margin: 50px 10px;
+}
+
+div.card form button,
+div.card form input{
+    border-radius: 50px;
+    padding: 10px 30px;
+}
+
+div.card div.card-footer{
+    background: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+div.card div.card-footer p{
+    color: gray;
+}
+
+div.card div.card-footer div.icons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px;
+}
+
+div.card div.card-footer div.icons a{
+    border: 1px solid rgb(84, 84, 191);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}

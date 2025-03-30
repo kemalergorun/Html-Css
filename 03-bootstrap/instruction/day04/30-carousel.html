@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carousel</title>
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body data-bs-theme="dark">
+    <h1 class="text-center text-danger my-2">Carousel</h1>
+
+    <!-- Creating carousel -->
+     <div class="carousel slide carousel-fade" data-bs-ride="carousel" id="productSlide">
+
+        <!-- Creating indicators -->
+         <div class="carousel-indicators">
+            <button type="button" data-bs-target="#productSlide" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#productSlide" data-bs-slide-to="1" class="active"></button>
+            <button type="button" data-bs-target="#productSlide" data-bs-slide-to="2" class="active"></button>
+         </div>
+
+         <!-- Inner carousel -->
+         <div class="carousel-inner">
+            <!-- First Slide -->
+             <div class="carousel-item active" data-bs-interval="1000">
+                <img src="https://images.pexels.com/photos/31083976/pexels-photo-31083976/free-photo-of-stunning-views-of-bempton-cliffs-overlooking-the-north-sea.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Cliff" class="img-fluid w-100" >
+
+                <!-- Caption -->
+                 <div class="carousel-caption text-white">
+                    <h5>The Thrilling Cliff</h5>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                 </div>
+             </div>
+
+               <!-- Second Slide -->
+             <div class="carousel-item" data-bs-interval="1000">
+                <img src="https://images.pexels.com/photos/31180285/pexels-photo-31180285/free-photo-of-modern-glass-skyscrapers-against-blue-sky.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Skyscraper" class="img-fluid w-100" >
+
+                <!-- Caption -->
+                 <div class="carousel-caption text-white">
+                    <h5>Last Step to the Sky</h5>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                 </div>
+             </div>
+
+               <!-- Third Slide -->
+             <div class="carousel-item" data-bs-interval="1000">
+                <img src="https://images.pexels.com/photos/20257362/pexels-photo-20257362/free-photo-of-back-view-of-a-deer-with-antlers-in-a-forest.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Animal" class="img-fluid w-100" >
+
+                <!-- Caption -->
+                 <div class="carousel-caption text-white">
+                    <h5>Meet with the Nature</h5>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                 </div>
+             </div>
+         </div>
+
+         <!-- Add buttons -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#productSlide" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#productSlide" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+
+     </div>
+
+
+    
+    <!-- ACTIONS WORK WITH 
+         JAVASCRIPT => data-bs-toggle="dropdown" -->
+    <!-- Bootstrap CDN JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
