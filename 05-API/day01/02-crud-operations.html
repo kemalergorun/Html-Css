@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Operations</title>
+    <style>
+        ul#list{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            list-style-type: none;
+        }
+        li{
+            border: 1px solid gray;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>CRUD Operations</h1>
+
+    <button id="btnGetUsers">Fetch Users</button>
+    <button id="btnCreateUser">Create Users</button>
+
+    <ul id="list"></ul>
+
+    <script type="module" src="./js/02-crud-operations.js"></script>
+</body>
+</html>
