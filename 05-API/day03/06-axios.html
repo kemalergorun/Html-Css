@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Operations with AXIOS</title>
+    <style>
+        ul#list{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            list-style-type: none;
+        }
+        li{
+            border: 1px solid gray;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>CRUD Operations with AXIOS</h1>
+
+    <div id="btnContainer">
+        <button id="btnGetUsers">Fetch Users</button>
+        <button id="btnCreateUser">Create Users</button>
+        <button id="btnUpdateUser">Update User</button>
+        <button id="btnDeleteUser">Delete User</button>
+    </div>
+
+    <div style="margin: 10px 0;">
+        <input type="text" id="userId" name="userId" placeholder="Enter an ID">
+
+        <input type="text" id="username" name="username" placeholder="Enter a username">
+    </div>
+
+    <ul id="list"></ul>
+    <!-- https://www.npmjs.com/package/axios?activeTab=readme#example -->
+
+    <!-- Axios CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+
+    <script type="module" src="./js/06-axios.js"></script>
+</body>
+</html>

@@ -69,10 +69,18 @@ const fetchUsers = async () => {
 
   // })
 
-  const response = await fetch(`${BASE_URL}/users`, { method: "GET" });
-  const data = await response.json();
-  //   console.log(data);
-  renderUsers(data);
+  //   const response = await fetch(`${BASE_URL}/users`, { method: "GET" });
+  //   const data = await response.json();
+  //   //   console.log(data);
+  //   renderUsers(data);
+
+  axios
+    .get(`${BASE_URL}/user`)
+    .then((res) => {
+      console.log(res);
+      renderUsers(res.data);
+    })
+    .catch((err) => console.log(err));
 };
 
 fetchUsers();
@@ -118,17 +126,23 @@ const createUser = async () => {
   //     fetchUsers();
   // }).catch(err => console.log(err))
 
-  const response = await fetch(`${BASE_URL}/users`, {
-    method: "POST",
-    body: JSON.stringify(payload),
-    headers: {
-      "content-type": "application/json",
-    },
-  });
+  //   const response = await fetch(`${BASE_URL}/users`, {
+  //     method: "POST",
+  //     body: JSON.stringify(payload),
+  //     headers: {
+  //       "content-type": "application/json",
+  //     },
+  //   });
 
-  const data = await response.json();
-  //   console.log(data);
-  fetchUsers();
+  //   const data = await response.json();
+  //   //   console.log(data);
+  //   fetchUsers();
+
+  axios.post( `${BASE_URL}/users` , payload).then(res => {
+    console.log(res);
+    fetchUsers();
+  }).catch(err => console.log(err.message));
+
 };
 
 const updateUser = async (userId, username) => {
@@ -146,16 +160,22 @@ const updateUser = async (userId, username) => {
   //     fetchUsers();
   //   }).catch(err => console.log(err));
 
-  const response = await fetch(`${BASE_URL}/users/${userId}`, {
-    method: "PUT",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(payload),
-  });
+  //   const response = await fetch(`${BASE_URL}/users/${userId}`, {
+  //     method: "PUT",
+  //     headers: { "Content-Type": "application/json" },
+  //     body: JSON.stringify(payload),
+  //   });
 
-  const data = await response.json();
+  //   const data = await response.json();
 
-  console.log(data);
-  fetchUsers();
+  //   console.log(data);
+  //   fetchUsers();
+
+  axios.put(`${BASE_URL}/users/${userId}`, payload).then(res =>{ console.log(res);
+    fetchUsers()
+    return res.data
+  } ).catch(err => console.log(err.message))
+
 };
 
 const deleteUser = async (userId) => {
@@ -167,14 +187,19 @@ const deleteUser = async (userId) => {
   //     console.log(data);
   //     fetchUsers();
   //   });
+  //   const response = await fetch(`${BASE_URL}/users/${userId}`, {
+  //     method: "DELETE",
+  //   });
+  //   const data = await response.json();
+  //   console.log(data);
+  //   lastDeletedUser = data;
+  //   fetchUsers();
 
-  const response = await fetch(`${BASE_URL}/users/${userId}`, {
-    method: "DELETE",
-  });
-  const data = await response.json();
-  console.log(data);
-  lastDeletedUser = data;
-  fetchUsers();
+  axios.delete(`${BASE_URL}/users/${userId}`).then((res) => {
+    console.log(res);
+    fetchUsers();
+  }).catch((err) => console.log(err.message))
+
 };
 
 const retrieveDeletedUser = async ({
