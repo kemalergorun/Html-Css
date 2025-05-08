@@ -1,0 +1,35 @@
+body{
+    h1{
+        text-align: center;
+        color: red;
+    }
+
+    nav{
+        ul{
+            margin: 0 auto;
+            padding: 0;
+            list-style-type: none;
+            li{
+                display: inline-block;
+                margin-right: 10px;
+                a{
+                    text-decoration: none;
+                    padding: 8px 16px;
+                    color: violet;
+                    background-color: darkred;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+
+    .alert, .warning{
+        ul, p{
+            background-color: yellow;
+            color: red;
+            padding: 10px;
+            border: 1px solid red;
+            border-radius: 5px;
+        }
+    }
+}

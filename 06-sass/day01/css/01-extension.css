@@ -1,0 +1,11 @@
+body {
+  background-color: #222;
+  color: white;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/*# sourceMappingURL=01-extension.css.map */
