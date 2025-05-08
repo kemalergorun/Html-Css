@@ -1,0 +1,41 @@
+// $ used to declare and reference variables like color, font, and etc.
+$bg-clr: #333;
+$text-clr: mediumspringgreen;
+$clr-2: gold;
+$p-1: 10px;
+$border-1: 1px solid $clr-2;
+
+body{
+    background-color: $bg-clr;
+}
+
+h1{
+    color: $text-clr;
+    text-align: center;
+}
+
+input{
+    color: $text-clr;
+    background-color: $bg-clr;
+    border: $border-1;
+    outline: none;
+    padding: 5px 20px;
+    border-radius: $p-1;
+
+    &::placeholder{
+        color: $text-clr;
+        opacity: .8;
+    }
+}
+
+button{
+    background-color: transparent;
+    color: $text-clr;
+    border-radius: $p-1;
+    padding: 5px 20px;
+    &:hover{
+        background-color: $clr-2;
+        color: $bg-clr;
+        transition: .3s all;
+    }
+}

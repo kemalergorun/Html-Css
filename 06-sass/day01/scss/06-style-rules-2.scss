@@ -1,0 +1,59 @@
+h1{
+    text-align: center;
+    color: blue;
+}
+
+ul{
+    // child combinator
+    > li{
+        background-color: orangered;
+    }
+}
+
+li{
+    // adjacent sibling combinator
+    + div{
+        color: red;
+    }
+}
+
+li.active{
+    ~ li{
+        font-weight: bolder;
+    }
+}
+
+// & means there will not be any space, and you cannot use any space when writing:
+
+/*
+div{
+    &.active         =>   div.active
+}
+
+li{
+        &:hover{     => li:hover
+        }
+    }
+
+*/
+div{
+    font-style: italic;
+    &.active{
+        background-color: aqua;
+    }
+
+    li{
+        text-align: center;
+        &:hover{
+            background-color: red;
+            color: white;
+            transition: all .3s ease;
+        }
+    }
+}
+
+
+
+
+
+

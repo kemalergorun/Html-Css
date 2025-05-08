@@ -1,0 +1,52 @@
+// As there is no name here, the default name will be the file name, so we have to use it with variables.$bg-clr
+// @use "variables";
+
+// If you do not want to use the full pathname, you can use "as" keyword to give it a name:
+// @use "variables" as v;
+
+// If you use * asterisk sign, you can import all the variables, so you do not need to use name before them:
+@use "variables" as *;
+
+// AS A LAST RESORT, you can import with @import, it will import all the styles from the imported file even if they are not used in imported file
+// @import "./_variables.scss";
+
+body{
+    background-color: $bg-clr;
+}
+
+h1{
+    color: $text-clr;
+    text-align: center;
+}
+
+input{
+    color: $text-clr;
+    background-color: $bg-clr;
+    border: $border-1;
+    outline: none;
+    padding: 5px 20px;
+    border-radius: $p-1;
+
+    &::placeholder{
+        color: $text-clr;
+        opacity: .8;
+    }
+}
+
+button{
+    background-color: transparent;
+    color: $text-clr;
+    border-radius: $p-1;
+    padding: 5px 20px;
+    &:hover{
+        background-color: $clr-2;
+        color: $bg-clr;
+        transition: .3s all;
+    }
+}
+
+
+
+
+
+

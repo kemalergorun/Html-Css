@@ -1,0 +1,1 @@
+h1{text-align:center;color:blue}ul>li{background-color:#ff4500}li+div{color:red}li.active~li{font-weight:bolder}div{font-style:italic}div.active{background-color:aqua}div li{text-align:center}div li:hover{background-color:red;color:#fff;transition:all .3s ease}

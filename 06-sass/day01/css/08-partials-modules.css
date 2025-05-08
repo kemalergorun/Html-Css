@@ -1,0 +1,1 @@
+body{background-color:#333}h1{color:#00fa9a;text-align:center}input{color:#00fa9a;background-color:#333;border:1px solid gold;outline:none;padding:5px 20px;border-radius:10px}input::placeholder{color:#00fa9a;opacity:.8}button{background-color:rgba(0,0,0,0);color:#00fa9a;border-radius:10px;padding:5px 20px}button:hover{background-color:gold;color:#333;transition:.3s all}
