@@ -1,0 +1,31 @@
+@use "mixins" as *;
+
+$colors: red, blue, green;
+
+ul{
+    @include reset-list;
+}
+
+@for $i from 1 through 30{
+    li{
+        &:nth-child(#{$i}){
+            background-color: lighten(#222, $i*3%);
+        }
+    }
+}
+
+@each $color in $colors{
+    li.#{$color}{
+        color: $color;
+    }
+}
+
+
+// It is not suggested to be used whenever you can do the same structure with @for and @each:
+$k: 1;
+@while $k <= 3 {
+  .padding-#{$k} {
+    padding: $k * 5px;
+  }
+  $k: $k + 1;
+}

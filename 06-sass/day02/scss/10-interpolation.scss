@@ -1,0 +1,10 @@
+@use "mixins" as *;
+
+// $selectedIcon: arrow-down;
+$selectedIcon: ellipse;
+
+
+.avatar{
+    @include avatar;
+    background-image: url("../assets/image/icon-#{$selectedIcon}.svg");
+}

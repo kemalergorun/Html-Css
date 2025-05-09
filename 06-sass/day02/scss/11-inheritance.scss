@@ -1,0 +1,33 @@
+@use "reset";
+
+h1{
+    text-align: center;
+    color: blue;
+    margin: 30px;
+}
+
+.btn{
+    height: 40px;
+    width: 200px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: darkslateblue;
+    background-color: orange;
+    &:hover{
+        background-color: orangered;
+        color: darkblue;
+        transition: .4s all;
+    }
+}
+
+#btnSubmit{
+    @extend .btn;
+    font-size: 20px
+}
+
+#btnReset{
+    @extend .btn;
+    color: black;
+    outline: none;
+    border: none;
+}

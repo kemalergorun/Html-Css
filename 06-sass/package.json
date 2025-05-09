@@ -6,7 +6,8 @@
     "compile-npm": "sass ./day01/scss/02-npm-package.scss:./day01/css/02-npm-package.css",
      "watch-compile-npm": "sass ./day01/scss/02-npm-package.scss:./day01/css/02-npm-package.css --watch",
      "compile-all":"sass ./day01/scss:./day01/css",
-       "watch-compile-all-without-map": "sass --watch ./day01/scss:./day01/css --no-source-map --style=compressed"
+       "watch-compile-all-without-map": "sass --watch ./day01/scss:./day01/css --no-source-map --style=compressed",
+         "watch-compile-all-without-map-2": "sass --watch ./day02/scss:./day02/css --no-source-map --style=compressed"
   },
   "keywords": [],
   "author": "",

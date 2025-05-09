@@ -1,0 +1,55 @@
+@mixin reset-list{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+@mixin flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+@mixin flexbox($jc, $ai, $gap){
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    gap: $gap;
+}
+
+@mixin avatar($size: 150px, $circle: false, $fs: false){
+
+    width: $size;
+    height: $size;
+    border-radius: 12px;
+
+    @if $circle{
+        border-radius: 50%;
+
+        @if $fs{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    }
+
+}
+
+@mixin button-style($type){
+    @if $type == primary{
+        background-color: navy;
+        color: lightseagreen;
+    } @else if $type == secondary{
+        background-color: crimson;
+        color: pink;
+    } @else{
+        background-color: #333;
+        color: lightgreen;
+    }
+
+    &:hover{
+        transition: .3s all;
+        opacity: .8;
+        box-shadow: 0px 0px 3px 3px;
+    }
+}

@@ -1,0 +1,47 @@
+@mixin reset-list{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+@mixin flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+@mixin flexbox($jc, $ai, $gap){
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    gap: $gap;
+}
+
+@mixin avatar($size: 150px, $circle: false, $fs: false){
+
+    width: $size;
+    height: $size;
+    border-radius: 12px;
+
+    @if $circle{
+        border-radius: 50%;
+
+        @if $fs{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
